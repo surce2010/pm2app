@@ -30,8 +30,7 @@
       "port": "3999",
       "ref": "origin/master",
       "repo": "git@github.com:surce2010/pm2app.git",
-      "path": "/home/dingshaohua/www/production",
-      "post-deploy": "npm install && pm2 startOrRestart ecosystem.json --env production"
+      "path": "/home/dingshaohua/www/production"
     }
   }
 }
