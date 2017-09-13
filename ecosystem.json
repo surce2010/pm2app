@@ -1,36 +1,32 @@
 {
-  /**
-   * Application configuration section
-   * PM2 - Application Declaration
-   */
   "apps": [
+  {
+    "name": "pm2app",
+    "script": "./index.js",
+    "env":
     {
-      "name": "pm2app",
-      "script": "./index.js",
-      "env":
-      {
-        "COMMON_VARIABLE": "true"
-      },
-      "env_production":
-      {
-        "NODE_ENV": "production"
-      }
+      "COMMON_VARIABLE": "true"
+    },
+    "env_production":
+    {
+      "NODE_ENV": "production"
     }
-  ],
-  /**
-   * Deployment section
-   * PM2 - Deployment
-   */
+  }],
   "deploy":
   {
     "production":
     {
       "user": "dingshaohua",
-      "host": "192.168.147.131",
+      "host": ["192.168.147.131"],
       "port": "3999",
       "ref": "origin/master",
       "repo": "git@github.com:surce2010/pm2app.git",
-      "path": "/home/dingshaohua/www/production"
+      "path": "/home/dingshaohua/www/production",
+      "ssh_options": "StrictHostKeyChecking=no",
+      "env":
+      {
+        "NODE_ENV": "production"
+      }
     }
   }
 }
