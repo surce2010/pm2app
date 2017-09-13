@@ -1,0 +1,23 @@
+{
+  "name": "pm2app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "pm2": "pm2 start ecosystem.json"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/surce2010/pm2app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/surce2010/pm2app/issues"
+  },
+  "homepage": "https://github.com/surce2010/pm2app#readme",
+  "dependencies": {
+    "express": "^4.15.4"
+  }
+}
