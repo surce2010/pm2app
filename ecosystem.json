@@ -21,7 +21,7 @@
       "port": "3999",
       "ref": "origin/master",
       "repo": "git@github.com:surce2010/pm2app.git",
-      "path": "/home/dingshaohua/www/production",
+      "path": "/home/dingshaohua/www/test/production",
       "ssh_options": "StrictHostKeyChecking=no",
       "post-deploy": "npm install && pm2 startOrRestart ecosystem.json --env production",
       "env":
